@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="simple">
+
+	<!-- Executes YUI compressor on simple JS file -->
+	<target name="simplest">
+		<java jar="web/WEB-INF/lib/yuicompressor-2.4.2.jar" fork="true">
+			<arg value="-v" />
+			<arg value="web/script/simple.js" />
+		</java>
+	</target>
+
+	<!-- Executes YUI compressor on simple JS file -->
+	<target name="simple">
+		<java jar="web/WEB-INF/lib/yuicompressor-2.4.2.jar" fork="true">
+			<arg value="-v" />
+			<arg value="web/script/simple.js" />
+			<arg value="-o" />
+			<arg value="${build.dir}/web/script/simple.js" />
+		</java>
+	</target>
+
+</project>

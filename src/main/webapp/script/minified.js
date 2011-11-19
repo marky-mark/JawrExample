@@ -1,0 +1,1 @@
+gString="A global String";function doNothing(){}function displayMessage(a){alert(a)};
